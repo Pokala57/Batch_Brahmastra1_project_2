@@ -1,0 +1,208 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.navbar-brand img {
+    height: 40px;
+}
+
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.navbar-toggler-icon {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px 0;
+}
+
+
+.navbar-collapse {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+
+.nav-link:hover {
+    color: #007bff;
+
+}
+
+
+/* banner section styles */
+
+.banner-section {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-Heading {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    /* font-size: 20px; */
+}
+
+.banner-caption {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.viewMenuButton {
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.exploreMenuButton {
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+    color: #f5d000;
+    cursor: pointer;
+}
+
+
+.Why-Choose-us {
+    height: auto;
+    border: 1px solid red;
+    padding: 10px;
+    padding-left: 15px;
+
+}
+
+.wcuHeading {
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+
+.wcuSectionContainer {
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+.wcuInnerCont {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border:1px solid #a3a3a3 ;
+    border-radius: 10px;
+}
+
+.wcuImg {
+    height: 50px;
+    width: 40px;
+    /* border: 1px solid red; */
+}
+
+
+.wcuInnerCont h5{
+    /* border: 1px solid red; */
+    margin: 10px;
+    font-size: 16px;
+}
+ 
+
+.wcuInnerCont p{
+    /* border: 1px solid red; */
+    margin: 0px;
+}
+ 
+
+/* resposive desing */
+
+@media (max-width:768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .navbar-collapse.show {
+        display: flex;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 15px;
+        text-align: center;
+    }
+}
